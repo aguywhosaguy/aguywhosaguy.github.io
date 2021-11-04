@@ -2,8 +2,15 @@
 <html>
   <head>
   <title>Azure Mines Trade Calculator</title>
-  <script>
-
+  <script LANGUAGE="JavaScript">
+    function calculate(form) {
+      var fore = form.ores.value;
+      var amount = form.amount.value;
+      var lore = form.ores2.value;
+      var final = fore * amount;
+      var finalr = final / lore;
+      alert (finalr)
+    }
   </script>
   </head>
   <form action="" method="get">
@@ -111,5 +118,7 @@
       <option value=25000>Pumpkinite</option>
       <option value=250000>Ambrosia</option>
     </select>
+    <br>
+    <input type="button" id="submit" value="Calculate" onClick="calculate(this.form)">
   </form>
 </html>
