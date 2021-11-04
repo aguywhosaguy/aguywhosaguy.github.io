@@ -9,7 +9,13 @@
       var lore = form.ores2.value;
       var final = fore * amount;
       var finalr = final / lore;
-      alert (finalr)
+      var rfinal = Math.round(finalr)
+      if (rfinal == 0){
+        alert ("Rounded to 0 (Actual number was" + finalr + ")")
+      }
+      else {
+        alert (rfinal)
+      }
     }
   </script>
   </head>
