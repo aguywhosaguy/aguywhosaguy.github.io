@@ -30,12 +30,15 @@
       border-top: 3px solid #bbb;
       text-align: center;
     }
+    label {
+      font-size: 64px;
+    }
   </style>
   </head>
   <h1 class="ayo">Azure Mines Trade Values Calculator</h1>
   <div></div>
   <br>
-    <br>
+  <br>
   <form class="ayo" action="" method="get">
     <label class="ayo" for="ores">Pick ore: </label>
     <select id="ores" name="ores">
@@ -88,8 +91,12 @@
       <option value=250000>Ambrosia</option>
     </select>
     <br>
+    <br>
+    <br>
     <label class="ayo" for="amount">Amount of ore:</label>
     <input type="number" name="amount" id="amount">
+    <br>
+    <br>
     <br>
     <label class="ayo" for="ores2">Pick other ore:</label>
     <select class="ayo" id="ores2" name="ores2">
@@ -141,6 +148,8 @@
       <option value=25000>Pumpkinite</option>
       <option value=250000>Ambrosia</option>
     </select>
+    <br>
+    <br>
     <br>
     <input class="ayo" type="button" name="submit" value="Calculate" onClick="calculatecv(this.form)">
   </form>
