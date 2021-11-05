@@ -10,14 +10,14 @@
       var final = fore * amount;
       var finalr = final / lore;
       var rfinal = Math.round(finalr)
-      var finalstr = toString(rfinal)
       if (rfinal == 0){
-       msg = "Value Rounded to 0 (Actual number was " + rfinal + ")";
+        rfinaler = '' + finalr
+       msg = "Value Rounded to 0 (Actual number was " + rfinaler + ")";
        document.getElementById("value").innerHTML = toString(msg)
       }
       else {
-        msg = "Value: " + rfinal
-        document.getElementById("value").innerHTML = "Value: " + finalstr
+        rfinaler = '' + rfinal
+        document.getElementById("value").innerHTML = "Value: " + rfinaler
       }
     }
   </script>
