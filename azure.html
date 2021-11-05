@@ -11,12 +11,10 @@
       var finalr = final / lore;
       var rfinal = Math.round(finalr)
       if (rfinal == 0){
-       var value = document.getElementById("value");
-       value.value = "Value Rounded to 0 (Actual number was " + finalr + ")"
+       document.getElementById("value").innerHTML = "Value Rounded to 0 (Actual number was " + finalr + ")";
       }
       else {
-        var value = document.getElementById("value");
-        value.value = "Value: " + toString(rfinal)
+        document.getElementById("value").innerHTML = "Value: " + toString(rfinal)
       }
     }
   </script>
