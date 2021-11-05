@@ -33,6 +33,9 @@
     label {
       font-size: 32px;
     }
+    .box {
+      height: 32px;
+    }
   </style>
   </head>
   <h1 class="ayo">Azure Mines Trade Values Calculator</h1>
@@ -41,7 +44,7 @@
   <br>
   <form class="ayo" action="" method="get">
     <label class="ayo" for="ores">Pick ore: </label>
-    <select id="ores" name="ores">
+    <select class="box" id="ores" name="ores">
       <option value=2>Coal</option>
       <option value=2.5>Boomite</option>
       <option value=2.5>Silver</option>
@@ -89,17 +92,17 @@
       <option value=16666.6666667>Twitchite</option>
       <option value=25000>Pumpkinite</option>
       <option value=250000>Ambrosia</option>
-    </select>
+    </select> 
     <br>
     <br>
     <br>
     <label class="ayo" for="amount">Amount of ore:</label>
-    <input type="number" name="amount" id="amount">
+    <input class="box" type="number" name="amount" id="amount">
     <br>
     <br>
     <br>
     <label class="ayo" for="ores2">Pick other ore:</label>
-    <select class="ayo" id="ores2" name="ores2">
+    <select class="box" id="ores2" name="ores2">
       <option value=2>Coal</option>
       <option value=2.5>Boomite</option>
       <option value=2.5>Silver</option>
