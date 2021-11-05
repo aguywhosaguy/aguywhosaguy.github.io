@@ -12,11 +12,10 @@
       var rfinal = Math.round(finalr)
       if (rfinal == 0){
         rfinaler = '' + finalr
-       msg = "Value Rounded to 0 (Actual number was " + rfinaler + ")";
-       document.getElementById("value").innerHTML = toString(msg)
+        document.getElementById("value").innerHTML = "Value rounded to 0 (actual number was " + rfinaler + ")";
       }
       else {
-        rfinaler = '' + rfinal
+        var rfinaler = '' + rfinal
         document.getElementById("value").innerHTML = "Value: " + rfinaler
       }
     }
