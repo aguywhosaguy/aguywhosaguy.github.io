@@ -12,10 +12,12 @@
       var rfinal = Math.round(finalr)
       var finalstr = toString(rfinal)
       if (rfinal == 0){
-       document.getElementById("value").innerHTML = "Value Rounded to 0 (Actual number was " + rfinal + ")";
+       msg = "Value Rounded to 0 (Actual number was " + rfinal + ")";
+       document.getElementById("value").innerHTML = toString(msg)
       }
       else {
-        document.getElementById("value").innerHTML = "Value: " + rfinal
+        msg = "Value: " + rfinal
+        document.getElementById("value").innerHTML = toString(msg)
       }
     }
   </script>
@@ -180,6 +182,6 @@
     <br>
     <br>
     <input class="box" type="button" name="submit" value="Calculate" onClick="calculatecv(this.form)">
-    <p id="value">Value: 5</p>
+    <p id="value">Value: </p>
   </form>
 </html>
