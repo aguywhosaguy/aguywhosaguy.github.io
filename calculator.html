@@ -1,7 +1,40 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <script lang="JavaScript">
+            function calc(form) {
+                var firstd = form.firstd.value
+                var opchoice = form.operation.value
+                var secondd = form.secondd.value
+                switch (opchoice) {
+                    case "+":
+                    alert (firstd + secondd)
+                    break;
+                    case "-":
+                    alert (firstd - secondd)
+                    break;
+                    case "x":
+                    alert (firstd x secondd)
+                    break;
+                    case "/":
+                    alert (firstd / secondd)
+                    break;
+                
+                }
+            }
+        </script>
+    </head>
     <form action="" method="get">
         <label for="firstd">Make your equation: </label>
         <input type="number" name="firstd" id="firstd">
+        <select id="operation" name="operation">
+            <option value="plus">+</option>
+            <option value="plus">-</option>
+            <option value="plus">x</option>
+            <option value="plus">/</option>
+        </select>
+        <input type="number" name="firstdd" id="firstdd">
+        <br>
+        <input type="box" name="submit" value="Calculate" onclick="calc(this.form)" 
     </form>
 </html>
