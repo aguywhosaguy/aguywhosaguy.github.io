@@ -7,16 +7,16 @@
                 var opchoice = form.operation.value
                 var secondd = form.secondd.value
                 switch (opchoice) {
-                    case "+":
+                    case "plus":
                     alert (firstd + secondd)
                     break;
-                    case "-":
+                    case "minus":
                     alert (firstd - secondd)
                     break;
-                    case "x":
-                    alert (firstd x secondd)
+                    case "multiply":
+                    alert (firstd * secondd)
                     break;
-                    case "/":
+                    case "divide":
                     alert (firstd / secondd)
                     break;
                 
@@ -29,9 +29,9 @@
         <input type="number" name="firstd" id="firstd">
         <select id="operation" name="operation">
             <option value="plus">+</option>
-            <option value="plus">-</option>
-            <option value="plus">x</option>
-            <option value="plus">/</option>
+            <option value="minus">-</option>
+            <option value="multiply">x</option>
+            <option value="divide">/</option>
         </select>
         <input type="number" name="firstdd" id="firstdd">
         <br>
