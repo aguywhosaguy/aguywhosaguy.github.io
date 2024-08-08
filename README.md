@@ -1,2 +1,2 @@
 # aguywhosaguy.github.io
-website for challenge list (hopefully)
+All of my OLD projects. 2022 at the latest.
